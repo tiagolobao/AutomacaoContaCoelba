@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "Inverter"
 Function INVERTER(inverte As Variant) As String
 Dim txt As String
 For i = 0 To Len(inverte) - 1

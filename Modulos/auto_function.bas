@@ -1,10 +1,10 @@
-Attribute VB_Name = "MÛdulo3"
+Attribute VB_Name = "Auto"
 Sub AUTO()
-Attribute AUTO.VB_Description = "FunÁ„o do bot„o para preencher a planilha."
+Attribute AUTO.VB_Description = "Fun√ß√£o do bot√£o para preencher a planilha."
 Attribute AUTO.VB_ProcData.VB_Invoke_Func = "A\n14"
 '
 ' AUTO Macro
-' FunÁ„o do bot„o para preencher a planilha.
+' Fun√ß√£o do bot√£o para preencher a planilha.
 '
 ' Atalho do teclado: Ctrl+Shift+A
 '
@@ -99,11 +99,11 @@ Dim rng As Range
     Range("AC6").Select
     ActiveSheet.Paste
 '--------------------------------------------------------------------------------------------
-'PREENCHIMENTO CONTRIBUI«√O ILUMINA«√O P⁄BLICA--------------------------------------------------
+'PREENCHIMENTO CONTRIBUI√á√ÉO ILUMINA√á√ÉO P√öBLICA--------------------------------------------------
     Sheets("INPUT").Select
     Application.CutCopyMode = False
     Range("A1").Select
-    Cells.Find(What:="ContribuiÁ„o IluminaÁ„o P˙blica", After:=ActiveCell, _
+    Cells.Find(What:="Contribui√ß√£o Ilumina√ß√£o P√∫blica", After:=ActiveCell, _
         LookIn:=xlFormulas, LookAt:=xlPart, SearchOrder:=xlByRows, _
         SearchDirection:=xlNext, MatchCase:=False, SearchFormat:=False).Activate
     Selection.Copy
@@ -123,11 +123,11 @@ Dim rng As Range
     Sheets("OUTPUT").Select
     Range("AG6").Select
 '--------------------------------------------------------------------------------------------------
-'PREENCHIMENTO DEMANDA M¡XIMA NA PONTA--------------------------------------------------------------------------------------------------
+'PREENCHIMENTO DEMANDA M√ÅXIMA NA PONTA--------------------------------------------------------------------------------------------------
     ActiveSheet.Paste
     Sheets("INPUT").Select
     Range("A1").Select
-    Cells.Find(What:="Demanda M·xima Na Ponta", After:=ActiveCell, LookIn:= _
+    Cells.Find(What:="Demanda M√°xima Na Ponta", After:=ActiveCell, LookIn:= _
         xlFormulas, LookAt:=xlPart, SearchOrder:=xlByRows, SearchDirection:= _
         xlNext, MatchCase:=False, SearchFormat:=False).Activate
     Application.CutCopyMode = False
@@ -140,10 +140,10 @@ Dim rng As Range
 
 
 
-'PREENCHIMENTO DEMANDA M¡XIMA FORA PONTA--------------------------------------------------------------------------------------------------
+'PREENCHIMENTO DEMANDA M√ÅXIMA FORA PONTA--------------------------------------------------------------------------------------------------
     Sheets("INPUT").Select
     Range("A1").Select
-    Cells.Find(What:="Demanda M·xima Fora de Ponta", After:=ActiveCell, LookIn:= _
+    Cells.Find(What:="Demanda M√°xima Fora de Ponta", After:=ActiveCell, LookIn:= _
         xlFormulas, LookAt:=xlPart, SearchOrder:=xlByRows, SearchDirection:= _
         xlNext, MatchCase:=False, SearchFormat:=False).Activate
     Application.CutCopyMode = False
@@ -240,10 +240,10 @@ Dim rng As Range
     Application.CutCopyMode = False
 '--------------------------------------------------------------
 
-'PREENCHIMENTO INTERRUP«√O DE ENERGIA---------------------------------
+'PREENCHIMENTO INTERRUP√á√ÉO DE ENERGIA---------------------------------
     Sheets("INPUT").Select
     Range("A1").Select
-    Set rng = Cells.Find(What:="InterrupÁ„o de energia", After:=ActiveCell, LookIn:=xlFormulas, _
+    Set rng = Cells.Find(What:="Interrup√ß√£o de energia", After:=ActiveCell, LookIn:=xlFormulas, _
     LookAt:=xlPart, SearchOrder:=xlByRows, SearchDirection:=xlNext, MatchCase:= _
     False, SearchFormat:=False)
     If Not rng Is Nothing Then 'when rng <> nothing means found something'
@@ -390,7 +390,7 @@ Dim rng As Range
 'PREENCHIMENTO TIPO DE CONTA----------------------
     Sheets("INPUT").Select
     Range("A1").Select
-    Cells.Find(What:="CLASSIFICA«√O", After:=ActiveCell, LookIn:=xlFormulas _
+    Cells.Find(What:="CLASSIFICA√á√ÉO", After:=ActiveCell, LookIn:=xlFormulas _
         , LookAt:=xlPart, SearchOrder:=xlByRows, SearchDirection:=xlNext, _
         MatchCase:=False, SearchFormat:=False).Activate
     Application.CutCopyMode = False
@@ -402,7 +402,7 @@ Dim rng As Range
     Application.CutCopyMode = False
 '--------------------------------------------------------------
 
-'CÈlulas que n„o precisam de informaÁıes adicionais
+'C√©lulas que n√£o precisam de informa√ß√µes adicionais
 Range("AQ6").Value = 0
 Range("AR6").Value = 0
 Range("AF6").Value = 0
@@ -455,7 +455,7 @@ Range("K6").Value = 0
     ActiveSheet.Paste
 '------------------------------------------------------------------------------
 
-'ALGORITIMO PARA VER SE EXISTE OU N√O
+'ALGORITIMO PARA VER SE EXISTE OU N√ÉO
 '    Sheets("INPUT").Select
 '    Range("A1").Select
 '    Dim rng As Range

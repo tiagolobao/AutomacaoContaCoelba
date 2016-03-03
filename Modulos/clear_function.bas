@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo4"
+Attribute VB_Name = "Clear"
 Sub Clear()
 Attribute Clear.VB_ProcData.VB_Invoke_Func = "C\n14"
 '

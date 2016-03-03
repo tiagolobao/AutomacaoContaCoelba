@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo2"
+Attribute VB_Name = "Datar"
 Function DATAR(entrada As Variant) As String
 
 Dim txt As String
